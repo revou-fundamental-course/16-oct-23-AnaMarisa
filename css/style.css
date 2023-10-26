@@ -1,0 +1,397 @@
+html {
+  scroll-behavior: smooth;
+}
+
+body {
+  padding: 0;
+  margin: 0;
+  font-family: "Montserrat", sans-serif;
+}
+
+header {
+  display: flex;
+  justify-content: space-between;
+  padding: 1rem;
+  background-color: #fff;
+  position: sticky;
+  top: 0;
+}
+
+.menu {
+  display: flex;
+  align-items: center;
+}
+
+.menu a {
+  color: #000;
+}
+
+.nav-logo {
+  max-height: 50px;
+}
+
+.nav-item {
+  padding: 2px 1em;
+  border: 0.5px solid black;
+  min-width: 60px;
+  text-align: center;
+  cursor: pointer;
+  text-decoration: none;
+}
+
+.nav-item:hover {
+  background-color: lightgray;
+}
+
+.banner {
+  display: flex;
+  color: white;
+  align-items: center;
+  background-image: url(/assets/bg-1.jpg);
+  background-size: cover;
+  background-repeat: no-repeat;
+  height: 650px;
+}
+
+.greetings {
+  padding-left: 2em;
+  padding-top: 5em;
+}
+
+.headquarters {
+  padding: 5em;
+  color: #000;
+}
+
+.circle {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  width: 150px;
+  height: 150px;
+  position: relative;
+  overflow: hidden;
+  border-radius: 50%;
+  background-size: cover;
+  transition: transform 0.2s;
+}
+
+.circle-1 {
+  background-image: url("https://images.unsplash.com/photo-1620773257573-48847d30bf81?auto=format&fit=crop&q=80&w=1548&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D");
+}
+.circle-2 {
+  background-image: url("https://images.unsplash.com/photo-1630993325136-a0e9ae6c6d41?auto=format&fit=crop&q=80&w=1548&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D");
+}
+
+.circle-3 {
+  background-image: url("https://images.unsplash.com/photo-1600664356348-10686526af4f?auto=format&fit=crop&q=80&w=1475&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D");
+}
+
+.circle::before {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: rgba(0, 0, 0, 0.4); /* Warna latar belakang semi-transparan */
+  opacity: 0; /* Mulai dengan opacity 0 (tidak terlihat) */
+  transition: opacity 0.2s; /* Efek perubahan opacity selama 0.2 detik */
+}
+
+.circle:hover::before {
+  opacity: 1; /* Ketika dihover, ubah opacity menjadi 1 (menjadi terlihat) */
+}
+
+.circle:hover,
+.city-text {
+  color: #000;
+  transform: scale(1.2);
+  z-index: 1;
+}
+
+.city-text {
+  margin: 0;
+  color: #fff;
+  transition: color 0.2s;
+  font-size: 14px;
+}
+
+.city-text::before {
+  opacity: 1;
+}
+
+.hq-items {
+  padding: 2em 3em;
+  display: flex;
+  justify-content: space-evenly;
+}
+
+/* CLIENTS */
+.clients {
+  padding: 5em;
+  text-align: center;
+}
+
+.client-icon {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  gap: 10px;
+}
+
+.client-icon img {
+  height: auto;
+  max-width: 100%;
+}
+
+.message-us {
+  padding: 5em;
+  /* background-color: #464444; */
+}
+
+.form {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.form-left {
+  width: 40%;
+}
+
+.form-1 {
+  display: flex;
+}
+
+.form-1 label {
+  width: 100px;
+  text-align: left;
+  margin-right: 10px;
+  font-size: 14px;
+}
+
+.form-1 input {
+  margin-bottom: 0.5em;
+  font-family: "Montserrat", sans-serif;
+}
+
+input:focus,
+textarea:focus {
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
+  outline: none;
+}
+
+.form-1 input[type="text"],
+.form-1 input[type="date"],
+.form-1 textarea {
+  flex: 2;
+}
+
+.form-1 input[type="radio"] {
+  margin-left: 0;
+}
+
+.btn-submit {
+  margin-top: 1em;
+  padding: 0.5em;
+  width: 100%;
+  cursor: pointer;
+  font-family: "Montserrat", sans-serif;
+}
+
+.form-2 {
+  font-size: 12px;
+}
+
+.form-2 textarea {
+  width: 600px;
+  height: 220px;
+}
+
+fieldset.form-2 {
+  border: 1px solid #ccc;
+  border-radius: 5px;
+  padding: 10px;
+  margin: 0;
+  width: 500px;
+  height: 200px;
+}
+
+.footer {
+  background-color: #464444;
+  color: #fff;
+  text-align: center;
+  padding: 1em;
+}
+
+.footer-text {
+  text-align: right;
+  padding: 1em;
+}
+
+.about-wrapper {
+  display: flex;
+  padding: 5em;
+  justify-content: space-between;
+}
+
+.about-text {
+  width: 45%;
+}
+
+.about-content {
+  margin-bottom: 30px;
+}
+
+.about-img {
+  width: 45%;
+}
+
+.about-btn {
+  text-decoration: none;
+  background-color: rgb(235, 164, 12);
+  color: #fff;
+  border-radius: 10px;
+  padding: 12px 24px;
+}
+
+.newsletter {
+  display: flex;
+  justify-content: space-between;
+  padding: 5em;
+}
+
+.newsletter img {
+  width: 45%;
+}
+
+.card {
+  width: 45%;
+  height: fit-content;
+  box-shadow: 0 4x 8px 0 rgba(0, 0, 0, 0.2);
+  transition: 0.3s;
+  box-shadow: 0 8px 16px 0 rgba(0, 0, 0, 0.2);
+}
+
+.card .container h2 {
+  margin: 0;
+}
+
+.newsletter .card .container input {
+  width: 100%;
+  height: 25px;
+}
+
+.text-bold {
+  font-weight: bold;
+}
+
+.card:hover {
+  box-shadow: 0 8px 16px 0 rgba(0, 0, 0, 0.2);
+}
+
+.container {
+  padding: 3em;
+}
+
+.newsletter-text {
+  margin-bottom: 30px;
+}
+
+.error {
+  color: red;
+}
+
+@media only screen and (max-width: 600px) {
+  .menu {
+    flex-direction: column;
+    align-items: center;
+    width: 50%;
+  }
+
+  .nav-item {
+    text-align: center;
+    width: 100%;
+  }
+
+  .header-wrapper {
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .header-wrapper img {
+    margin-bottom: 10px;
+  }
+
+  .about-wrapper {
+    display: block;
+  }
+
+  .about-img {
+    width: 100%;
+    margin-top: 40px;
+  }
+
+  .about-text {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 100%;
+  }
+
+  .about-btn {
+    text-align: center;
+  }
+
+  /* Clients */
+  .clients h1 {
+    text-align: center;
+  }
+
+  .client-icon {
+    flex-wrap: wrap;
+  }
+
+  .client-icon-1 {
+    flex-wrap: wrap;
+  }
+
+  /* Newsletter */
+  .newsletter {
+    flex-direction: column;
+  }
+
+  .card {
+    width: 100%; /* Gunakan seluruh lebar parent (newsletter) */
+    max-width: 100%; /* Hapus maksimum lebar untuk tampilan mobile */
+  }
+
+  .newsletter img {
+    width: 100%;
+    margin-bottom: 30px;
+  }
+
+  /* Form */
+  .form {
+    flex-direction: column;
+  }
+
+  .form-left {
+    width: 100%;
+  }
+
+  .form-right {
+    width: 100%;
+  }
+
+  .btn-submit {
+    margin-bottom: 20px;
+  }
+
+  fieldset.form-2 {
+    width: 95%;
+  }
+}

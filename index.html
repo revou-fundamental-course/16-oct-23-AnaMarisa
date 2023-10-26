@@ -5,9 +5,155 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Revo U</title>
     <link rel="stylesheet" href="css/style.css" />
-    <link rel="stylesheet" href="js/script.js" />
+    <!-- <script src="js/script.js"></script> -->
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,300;0,400;0,500;1,300;1,400;1,500&display=swap" rel="stylesheet" />
   </head>
   <body>
-    <h1>Hello World</h1>
+    <header class="header-wrapper">
+      <img class="nav-logo" src="assets/logo.png" alt="revo-u-logo" />
+      <nav class="menu">
+        <a class="nav-item" href="#">Home</a>
+        <a class="nav-item" href="#our-profile">Our Profile</a>
+        <a class="nav-item" href="https://anamarisa.github.io/anamarisa/">Portfolio</a>
+        <a class="nav-item" href="#message-us">Message Us</a>
+      </nav>
+    </header>
+
+    <section class="banner">
+      <div class="greetings">
+        <h1 id="greeting">What's your name?</h1>
+        <p>We offer cutting-edge technology solutions and consulting services.</p>
+      </div>
+    </section>
+
+    <div class="user-input">
+      <input type="text" id="username" placeholder="Enter your name" />
+      <button id="updateName">Submit</button>
+    </div>
+
+    <section class="about" id="our-profile">
+      <div class="about-wrapper">
+        <div class="about-text">
+          <h1>NexaSynergy Technologies</h1>
+          <p>
+            NexaSynergy is a dynamic and innovative company that specializes in cutting-edge technology solutions and consulting services. With a passionate team of experts, we are dedicated to delivering high-quality, forward-thinking
+            solutions to drive business growth and success in today's fast-paced digital landscape.
+          </p>
+          <p>
+            Our vision at NexaSynergy is to become a global leader in technology innovation and digital transformation. We aim to empower businesses of all sizes by providing them with the tools, knowledge, and support necessary to thrive
+            in the digital age. We envision a world where businesses can seamlessly adapt to evolving technologies and leverage them to reach new heights of productivity and profitability.
+          </p>
+          <p class="about-content">
+            NexaSynergy's mission is to provide our clients with customized, state-of-the-art technology solutions that align with their unique business needs. We are committed to fostering long-term partnerships by offering unparalleled
+            expertise, exceptional service, and continuous support. Our mission is to bridge the gap between technology and businesses, helping them not only survive but thrive in a rapidly changing world.
+          </p>
+          <a href="" type="button" class="about-btn">Contact Us</a>
+        </div>
+        <img class="about-img" src="assets/MHeiderich-ReflexionenZwei-03-copy.jpg" alt="building-comp" />
+      </div>
+    </section>
+
+    <!-- <section class="headquarters">
+      <h1>Our Headquarters</h1>
+      <div class="hq-items">
+          <div class="circle circle-1">
+              <p class="city-text">Jakarta</p>
+          </div>
+          <div class="circle circle-2">
+              <p class="city-text">Bandung</p>
+          </div>
+          <div class="circle circle-3">
+           <p class="city-text">Surabaya</p>
+          </div>
+      </div>
+      </div>
+    </section> -->
+
+    <section class="clients">
+      <h1>Our Clients</h1>
+      <div class="client-icon">
+        <img src="assets/tlj.png" alt="tlj" width="200" />
+        <img src="assets/gcp.png" alt="gcp" width="200" />
+        <img src="assets/bca.jpeg" alt="bca`" width="200" />
+        <img src="assets/gojek.png" alt="gojek" width="200" />
+        <img src="assets/zendesk.png" alt="zendesk" width="200" />
+        <img src="assets/aws.png" alt="aws" width="200" />
+      </div>
+    </section>
+
+    <section class="newsletter">
+      <img src="assets/MHeiderich-ReflexionenZwei-03-copy.jpg" alt="building" />
+      <div class="card">
+        <div class="container">
+          <h2>NexaSynergy Email Newsletter</h2>
+          <p class="text-bold">Subscribe to our newsletter and stay updated.</p>
+          <p>Enter your email address to subscribe</p>
+          <input name="email" for="email" id="email" type="email" placeholder="EMAIL" />
+          <h5>Provide your email address to subscribe. For e.g abc@xyz.com</h5>
+          <h5 class="newsletter-text">If you subscribe means you will receive our newsletters.</h5>
+          <a type="submit" class="about-btn">Subscribe</a>
+        </div>
+      </div>
+    </section>
+
+    <!-- Banner slideshow -->
+    <!-- <div>
+      <img class="img-slideshow" src="https://images.unsplash.com/photo-1588152850700-c82ecb8ba9b1?auto=format&fit=crop&q=80&w=1470&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D" />
+      <img class="img-slideshow" src="https://images.unsplash.com/photo-1621296732033-73d6eeb3442f?auto=format&fit=crop&q=80&w=1474&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1pYWdlfHx8fGVufDB8fHx8fA%3D%3D" />
+      <img class="img-slideshow" src="https://images.unsplash.com/photo-1605447302541-bd14aa1417ab?auto=format&fit=crop&q=80&w=1470&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D" />
+    </div> -->
+
+    <section id="message-us" class="message-us">
+      <h1>Message Us</h1>
+      <div class="form">
+        <div class="form-left">
+          <form action="https://google.com" method="POST">
+            <div class="form-1">
+              <label for="nama">Nama: </label>
+              <input name="nama" id="nama" type="text" placeholder="Nama" />
+              <p id="nama-error" class="error"></p>
+            </div>
+            <div class="form-1">
+              <label for="date">Date of Birth:</label>
+              <input name="date" type="date" />
+              <p id="date-error" class="error"></p>
+            </div>
+            <div class="form-1">
+              <label for="gender">Gender:</label>
+              <div class="radio-label">
+                <input type="radio" name="gender" id="male" value="Laki-Laki" />
+                <label for="male">Laki-Laki</label>
+                <input type="radio" name="gender" id="female" value="Perempuan" />
+                <label for="female">Perempuan</label>
+              </div>
+              <p id="gender-error" class="error"></p>
+            </div>
+            <div class="form-1">
+              <label for="text">Message:</label>
+              <textarea name="message" cols="40" rows="10" placeholder="Message"></textarea>
+              <p id="message-error" class="error"></p>
+            </div>
+          </form>
+          <button id="tombol" class="btn-submit" type="submit">Submit</button>
+        </div>
+        <div class="form-right">
+          <fieldset class="form-2">
+            <p>Current time: <span id="createdAt"></span></p>
+            <p>Nama: <span id="submittedNama"></span></p>
+            <p>Date of Birth: <span id="submittedDate"></span></p>
+            <p>Gender: <span id="submittedGender"></span></p>
+            <p>Message: <span id="submittedMessage"></span></p>
+          </fieldset>
+        </div>
+      </div>
+    </section>
+
+    <section class="footer">
+      <p class="footer-text">made by Ana.</p>
+    </section>
+
+    <script src="js/script.js"></script>
   </body>
 </html>
