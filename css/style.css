@@ -47,7 +47,7 @@ header {
   display: flex;
   color: white;
   align-items: center;
-  background-image: url(/assets/bg-1.jpg);
+  background-image: url(/assets/MHeiderich-NIP03-copy 2.jpg);
   background-size: cover;
   background-repeat: no-repeat;
   height: 650px;
@@ -96,13 +96,13 @@ header {
   left: 0;
   width: 100%;
   height: 100%;
-  background: rgba(0, 0, 0, 0.4); /* Warna latar belakang semi-transparan */
-  opacity: 0; /* Mulai dengan opacity 0 (tidak terlihat) */
-  transition: opacity 0.2s; /* Efek perubahan opacity selama 0.2 detik */
+  background: rgba(0, 0, 0, 0.4); 
+  opacity: 0; 
+  transition: opacity 0.2s; 
 }
 
 .circle:hover::before {
-  opacity: 1; /* Ketika dihover, ubah opacity menjadi 1 (menjadi terlihat) */
+  opacity: 1; 
 }
 
 .circle:hover,
@@ -365,8 +365,8 @@ fieldset.form-2 {
   }
 
   .card {
-    width: 100%; /* Gunakan seluruh lebar parent (newsletter) */
-    max-width: 100%; /* Hapus maksimum lebar untuk tampilan mobile */
+    width: 100%; 
+    max-width: 100%; 
   }
 
   .newsletter img {
